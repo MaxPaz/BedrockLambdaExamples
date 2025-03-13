@@ -1,10 +1,10 @@
-import boto3 # type: ignore
+import boto3 # layer to include latest libraries
 import os
 import json
 import traceback
 import concurrent.futures
-from opensearchpy import OpenSearch, RequestsHttpConnection
-from requests_aws4auth import AWS4Auth
+from opensearchpy import OpenSearch, RequestsHttpConnection  #layer for AOSS
+from requests_aws4auth import AWS4Auth    #layer for Requests module
 
 # AWS SDK CLIENTS
 OSServerless = boto3.client('opensearchserverless')
