@@ -1,5 +1,5 @@
 import json
-import boto3
+import boto3 #layer as bedrock latest libraries where not included at the moment of deploy
 
 bedrock = boto3.client(service_name='bedrock-runtime')
 
